@@ -14,7 +14,7 @@
 
 /* Tentang Section Container */
 .tentang {
-    background: linear-gradient(135deg, #f5f7ff 0%, #f0e7ff 50%, #fff5f7 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     backdrop-filter: blur(10px);
     position: relative;
     padding: 80px 0;
@@ -58,26 +58,28 @@
 
 .tentang-description {
     font-size: 1.05rem;
-    color: #333;
+    color: #e0e0e0;
     line-height: 1.8;
     padding: 25px;
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     border-left: 5px solid #667eea;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 /* Philosophy Section */
 .tentang-philosophy {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.25);
     animation: fadeInUp 0.8s ease 0.2s backwards;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(102, 126, 234, 0.3);
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .philosophy-title {
@@ -114,9 +116,9 @@
     display: flex;
     gap: 15px;
     padding: 18px;
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     border: 2px solid transparent;
     position: relative;
@@ -124,6 +126,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .info-item::before {
@@ -139,16 +142,17 @@
 .info-item:hover {
     border-color: #667eea;
     transform: translateX(8px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+    background: rgba(102, 126, 234, 0.1);
 }
 
 .info-item:last-child {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.05) 100%);
-    border: 2px solid rgba(102, 126, 234, 0.2);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border: 2px solid rgba(102, 126, 234, 0.3);
 }
 
 .info-item:last-child:hover {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.2) 100%);
     border-color: #667eea;
 }
 
@@ -184,7 +188,7 @@
 .info-value {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #333;
+    color: #e0e0e0;
 }
 .info-value:hover {
     color: #667eea;
