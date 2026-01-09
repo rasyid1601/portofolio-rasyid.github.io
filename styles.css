@@ -137,6 +137,9 @@ body {
     margin-bottom: 10px;
     font-weight: 700;
     animation: fadeInUp 0.8s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hero-subtitle {
