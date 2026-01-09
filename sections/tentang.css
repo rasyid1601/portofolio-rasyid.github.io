@@ -53,12 +53,13 @@
     font-weight: 800;
     margin-bottom: 20px;
     white-space: nowrap;
+    filter: brightness(1.2);
 }
 }
 
 .tentang-description {
     font-size: 1.05rem;
-    color: #e0e0e0;
+    color: #f0f0f0;
     line-height: 1.8;
     padding: 25px;
     background: rgba(255, 255, 255, 0.05);
@@ -101,7 +102,7 @@
     font-size: 1rem;
     line-height: 1.7;
     opacity: 0.95;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 /* Contact Information */
@@ -179,7 +180,7 @@
 .info-label {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #999;
+    color: #b0b0b0;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
@@ -188,7 +189,7 @@
 .info-value {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #e0e0e0;
+    color: #ffffff;
 }
 .info-value:hover {
     color: #667eea;
