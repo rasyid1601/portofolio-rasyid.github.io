@@ -491,12 +491,22 @@ section {
 
 /* Pengalaman Section */
 .pengalaman {
-    background: linear-gradient(180deg, white 0%, rgba(248, 250, 252, 0.9) 100%);
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 80px 0;
+}
+
+.pengalaman .section-title {
+    color: white;
+}
+
+.experience-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .timeline {
     position: relative;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-bottom: 60px;
 }
 
@@ -507,7 +517,7 @@ section {
     transform: translateX(-50%);
     width: 3px;
     height: 100%;
-    background: var(--border-color);
+    background: linear-gradient(180deg, #667eea, #764ba2);
     top: 0;
 }
 
@@ -531,20 +541,36 @@ section {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: var(--primary-color);
-    border: 4px solid white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: 4px solid #1a1a2e;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    box-shadow: 0 0 0 4px var(--primary-color);
+    box-shadow: 0 0 0 8px rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+    box-shadow: 0 0 0 12px rgba(102, 126, 234, 0.3);
+    transform: translateX(-50%) scale(1.2);
 }
 
 .timeline-content {
-    background: var(--light-bg);
-    padding: 25px;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
     margin: 0 30px;
+    border: 2px solid rgba(102, 126, 234, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: #667eea;
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
+    transform: translateY(-5px);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -557,25 +583,26 @@ section {
 
 .timeline-content h3 {
     font-size: 1.3rem;
-    color: var(--text-color);
+    color: #ffffff;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .company {
-    color: var(--primary-color);
+    color: #667eea;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .period {
-    color: var(--light-text);
+    color: #b0b0b0;
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
 
 .timeline-content ul {
     list-style: none;
-    color: var(--light-text);
+    color: #e0e0e0;
 }
 
 .timeline-content li {
@@ -588,7 +615,7 @@ section {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: #667eea;
     font-weight: bold;
 }
 
