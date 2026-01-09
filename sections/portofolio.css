@@ -18,7 +18,7 @@
 
 /* PDF Container */
 .portfolio-pdf-container {
-    background: white;
+    background: linear-gradient(135deg, #e4e4e9 0%, #3e3e3f 50%, #161616 100%);
     padding: 60px 40px;
     border-radius: 15px;
     box-shadow: var(--shadow);
@@ -35,14 +35,14 @@
 
 .portfolio-pdf-container h3 {
     font-size: 2rem;
-    color: var(--text-color);
+    color: #0f3460;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .portfolio-pdf-container p {
     font-size: 1.1rem;
-    color: var(--light-text);
+    color: white;
     margin-bottom: 30px;
     line-height: 1.6;
 }
