@@ -1,0 +1,150 @@
+/* ===================================
+   KONTAK SECTION STYLES
+   =================================== */
+
+/* Kontak Section Container */
+.kontak {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #9333ea 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.kontak::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.kontak .section-title {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.kontak .section-title::after {
+    background: var(--accent-color);
+}
+
+/* Contact Content Grid */
+.kontak-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Contact Information */
+.kontak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kontak-item {
+    display: flex;
+    gap: 20px;
+}
+
+.kontak-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.kontak-item h4 {
+    margin-bottom: 5px;
+}
+
+.kontak-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kontak-item a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact Form */
+.kontak-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .kontak-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}

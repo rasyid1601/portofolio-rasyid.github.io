@@ -1,0 +1,93 @@
+/* ===================================
+   TENTANG SECTION STYLES
+   =================================== */
+
+/* Tentang Section Container */
+.tentang {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 255, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+/* Content Grid Layout */
+.tentang-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Text Content */
+.tentang-text p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Contact Information Box */
+.tentang-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--text-color);
+    min-width: 80px;
+}
+
+.info-value {
+    color: var(--light-text);
+}
+
+/* Statistics Grid */
+.tentang-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.stat p {
+    color: var(--light-text);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .tentang-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tentang-stats {
+        grid-template-columns: 1fr;
+    }
+}
