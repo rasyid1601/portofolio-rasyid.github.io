@@ -8,46 +8,82 @@
     position: relative;
 }
 
-/* Filter Buttons */
-.portfolio-filters {
+/* Portfolio Content Wrapper */
+.portfolio-content-wrapper {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
+    align-items: center;
+    min-height: 500px;
 }
 
-.filter-btn {
-    padding: 10px 25px;
-    border: 2px solid var(--border-color);
+/* PDF Container */
+.portfolio-pdf-container {
     background: white;
+    padding: 60px 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 500px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.pdf-icon {
+    font-size: 80px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.portfolio-pdf-container h3 {
+    font-size: 2rem;
     color: var(--text-color);
-    border-radius: 25px;
-    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.portfolio-pdf-container p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.pdf-note {
+    margin: 20px 0 !important;
     font-weight: 600;
-    transition: all 0.3s ease;
+    color: var(--text-color);
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+.portfolio-pdf-container .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-/* Portfolio Grid */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .portfolio-content-wrapper {
+        min-height: auto;
+        padding: 30px 0;
+    }
 
-/* Portfolio Item Card */
-.portfolio-item {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
+    .portfolio-pdf-container {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    .pdf-icon {
+        font-size: 60px;
+    }
+
+    .portfolio-pdf-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-pdf-container p {
+        font-size: 1rem;
+    }
+}
     transition: all 0.3s ease;
     cursor: pointer;
 }
