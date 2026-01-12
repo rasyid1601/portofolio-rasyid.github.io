@@ -1,8 +1,4 @@
-/* ===================================
-   KONTAK SECTION STYLES
-   =================================== */
-
-/* Kontak Section Container */
+/* Kontak Section */
 .kontak {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #9333ea 100%);
     color: white;
@@ -33,7 +29,6 @@
     background: var(--accent-color);
 }
 
-/* Contact Content Grid */
 .kontak-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,7 +38,6 @@
     z-index: 2;
 }
 
-/* Contact Information */
 .kontak-info {
     display: flex;
     flex-direction: column;
@@ -75,7 +69,6 @@
     color: var(--accent-color);
 }
 
-/* Contact Form */
 .kontak-form {
     display: flex;
     flex-direction: column;
@@ -103,7 +96,6 @@
     resize: vertical;
 }
 
-/* Social Links */
 .social-links {
     display: flex;
     justify-content: center;
@@ -130,14 +122,128 @@
     transform: translateY(-5px);
 }
 
-/* Mobile Responsive */
+/* Footer */
+.footer {
+    background: var(--text-color);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer i {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .tentang-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tentang-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        width: 100% !important;
+        margin-left: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline-marker {
+        left: 30px;
+    }
+
+    .timeline-content {
+        margin: 0 0 0 80px !important;
+    }
+
     .kontak-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .portfolio-filters {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
     .social-links {
         gap: 15px;
     }
